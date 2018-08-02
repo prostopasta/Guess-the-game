@@ -1,0 +1,17 @@
+<meta charset="utf-8">
+<script>
+    let number = parseInt(Math.random() * 100);
+    while (true) {
+        let answer = Number(prompt("Введите число от 0 до 100"));
+        if (answer > number) {
+            alert("Ваше число слишком большое");
+        } else if (answer < number) {
+            alert("Ваше число слишком маленькое");
+        } else if (answer == number) {
+            alert("Вы угадали!");
+            break;
+        } else {
+            alert("Необходимо ввести число!");
+        }
+    }
+</script>
